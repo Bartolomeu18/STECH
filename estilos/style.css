@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    border-bottom:1px solid rgb(0, 153, 255) ;
+}
+header h1{
+    margin-left: 8px;
+}
+header nav a{
+    text-decoration: none;
+    font-size: larger;
+    font: bold;
+    color: black   ;
+    margin: 9px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color:whitesmoke ;
+}
+nav {
+    margin-right: 20px;
+}
+main{
+    background-color:whitesmoke ;
+  }
+#fresh{
+text-decoration:none ;
+color: black;
+  }
+  #mobile{
+display: none;
+      }
+/*estilização da class body*/
+.body {
+    display: flex;
+    justify-content: space-around;
+    scroll-snap-type: y mandatory;
+    color: black;
+}
+
+.img-conteiner {
+    width: 50%;
+    height: 550px;
+}
+
+.img-conteiner img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 90%;
+    margin-left: 16%;
+border-radius: 30%;
+    border: 2px solid #3c83a0;
+    box-shadow: 1px 1px 10px 2px rgb(0, 153, 255);
+    /*chamando e acvtivando  o efeito*/
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+/*carrosel*/
+.carousel-item img {
+    text-align: center;
+    display:block;
+    margin-left: 0px;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 600px; /* Ajuste o tamanho máximo da imagem */
+  }
+/*efeito para subir e descer*/
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+.sections {
+    width: 100%;
+    height: 20%;
+    color: black;
+    scroll-snap-type: y mandatory;
+
+}
+
+section h2 {
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
+
+section {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    padding-top: 9%;
+    transition: .5s ease-in-out;
+    height: 80vh;
+    width: 100%;
+    background-color:whitesmoke ;
+    /*margin-bottom: 30%;*/
+}
+
+section p {
+    margin-bottom: 25px;
+}
+section h3 {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 5px;
+}
+.firstsections{
+display: flex;
+}
+#firstsections_cont{
+    width: 50%;
+    }
+/*estilo dos botões*/
+#btn{
+    box-shadow: 1px 1px 10px 2px rgb(0, 153, 255);
+    background-color: rgb(0, 153, 255);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-size: larger;
+    padding: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/*imagens da segunda section*/
+
+#espe-img {
+    display: flex;
+    justify-content: space-around;
+   text-align: center;
+    margin: auto;
+    height: 50%;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 153, 255);
+    box-shadow: 1px 1px 10px 2px rgb(0, 153, 255);
+    position: relative;
+    top: 0;
+    left: 0 ;
+}
+/*serviços*/
+.segsetion{
+/*background-color: #226f8d;*/
+margin-bottom: 50px;
+}
+.solution{
+width: 100%;
+margin: auto;
+margin-top: 10px;
+display:flex;
+justify-content: space-around;
+align-items: center;
+}
+#title_esp,#conteudo_esp{
+text-align: center;
+width: 80%;
+margin: auto;
+
+    }
+
+#js {
+    height: 50%;
+    width: 25%;
+}
+#lastsetion h2 {
+text-align: center;
+
+}
+#lastsetion  {
+padding-top:3%;
+height: 80vh;
+    }
+.contacto-conteiner{
+margin: auto;
+}
+.redes-social{
+margin: auto;
+margin-top:30px;
+ width: 80%;
+display: flex;
+ gap: 25px;
+  justify-content: center;
+   }
+.redes-social a{
+    text-decoration: none;
+    color: rgb(2, 35, 61);
+        }
+ .redes-social a:hover{
+            color: rgb(0, 153, 255)  ;
+                }
+.redes-social i{
+    padding: 20px;
+    padding-top: 28px;
+    font-size: larger;
+}
+.redes-social i:hover{
+color: rgb(1, 91, 151);
+}
+.email{
+    margin: auto;
+    width: 80%;
+}
+
+label{
+    display: block;
+    align-items: center;
+    font-size: larger;
+    padding: 5px;
+    color:  black;
+}
+input{
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    background: none;
+      border: none;
+    border-bottom:2px solid  rgb(0, 153, 255) ;
+    outline: none;
+ color: silver;
+}
+form{
+    margin-left: 25%;
+
+}
+.inputmail{
+    padding: 10px;
+    width: 70%;
+    background: none;
+      border: none;
+    border-bottom:2px solid  rgb(0, 153, 255) ;
+    outline: none;
+  color: silver;
+} 
+#btns{
+    box-shadow: 1px 1px 10px 2px #226f8d;
+    background-color:  rgb(0, 153, 255) ;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-size: larger; 
+    width: 38%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left:18%;
+    cursor: pointer;
+
+}
+#btns:hover {
+    color: whitesmoke;
+    box-shadow: 1px 1px 10px 2px black;
+}
+.copy {
+
+text-align: center;
+}  
+hr{
+background-color:whitesmoke ;
+
+    } 
